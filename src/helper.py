@@ -2,7 +2,7 @@ import google.generativeai as genai
 from dotenv import load_dotenv
 import os
 
-print("Ready!")
+print("Hey prudent!")
 load_dotenv()
 
 GOOGLE_API_KEY=os.getenv("GOOGLE_API_KEY")
@@ -19,11 +19,3 @@ def llm_model_object(user_text):
     result=response.text
     return result
 
-# Get text input from user
-user_text = text_input()
-
-# Generate response using LLM model
-result = llm_model_object(user_text)
-
-# Print the generated text
-print("LLM Response:", result)
