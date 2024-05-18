@@ -1,8 +1,8 @@
-import google.generativeai as genai
+import google.lgenerativeai as genai
 from dotenv import load_dotenv
 import os
 
-print("Hey prudent!")
+print("Hello prudent recruiter..!, It was nice to meet you")
 load_dotenv()
 
 GOOGLE_API_KEY=os.getenv("GOOGLE_API_KEY")
@@ -13,7 +13,7 @@ def text_input():
     return user_text
 
 def llm_model_object(user_text):
-    genai.configure(api_key=google_api_key)
+    genai.configure(api_key=GOOGLE_API_KEY)
     model = genai.GenerativeModel('gemini-pro')
     response=model.generate_content(user_text)
     result=response.text
