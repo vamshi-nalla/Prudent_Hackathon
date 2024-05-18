@@ -11,7 +11,7 @@ Clone the repository
 ```bash
 Project repo: https://github.com/
 ```
-### STEP 01- Create a conda environment after opening the repository
+### STEP 01 - Create a conda environment after opening the repository
 
 ```bash
 # make sure the repository does not exist before creating.
@@ -23,24 +23,24 @@ conda activate prudentllm
 ```
 
 
-### STEP 02- install the requirements
+### STEP 02 - install the requirements
 ```bash
 pip install -r requirements.txt
 ```
-### STEP 03- Create a `.env` file in the root directory and add your GOOGLE_API_KEY credentials as follows:
+### STEP 03 - Create a `.env` file in the root directory and add your GOOGLE_API_KEY credentials as follows:
 
 ```ini
 # try to get the google api key form the link -[https://aistudio.google.com/app/u/1/apikey]
 GOOGLE_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ```
 
-### STEP 04- Try to Ignore the present virtual environment using gitignore
+### STEP 04 - Try to Ignore the present virtual environment using gitignore
 ```gitignore
     /.env
     env
 ```
 
-### STEP 05
+### STEP 05 - Update the required files
     - update the helper.py file
     - update the app.py
 
