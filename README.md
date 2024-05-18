@@ -25,6 +25,7 @@ conda activate prudentllm
 
 ### STEP 02 - install the requirements
 ```bash
+# It tries to install all the requirements at single instance in created environment
 pip install -r requirements.txt
 ```
 ### STEP 03 - Create a `.env` file in the root directory and add your GOOGLE_API_KEY credentials as follows:
@@ -41,6 +42,7 @@ GOOGLE_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ```
 
 ### STEP 05 - Update the required files
+    # select the open Source LLM model in this project we try to use gemini pro which is open source
     - update the helper.py file
     - update the app.py
 
